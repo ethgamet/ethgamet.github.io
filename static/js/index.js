@@ -386,9 +386,16 @@ window.addEventListener('load', function() {
 		}).then(function(result) {
 			startMoment = moment(result, 'X');
 			micro_second = moment.duration(endMoment - startMoment);
+			
+			if (micro_second.as('ms') <= 0) {
+				$nextTimeDifferenceInEarnings.html(timeDiffFormate(0, undefined));
+				return
+			}
+			
 			$nextTimeDifferenceInEarnings.html(timeDiffFormate(micro_second.as('ms'), undefined));
 			var interval = setInterval(function() {
 				if (micro_second.as('ms') <= 0) {
+					$nextTimeDifferenceInEarnings.html(timeDiffFormate(0, undefined));
 					clearInterval(interval);
 					return
 				}
@@ -569,9 +576,16 @@ window.addEventListener('load', function() {
 		}).then(function(result) {
 			startMoment = moment(result, 'X');
 			micro_second = moment.duration(endMoment - startMoment);
+			
+			if (micro_second.as('ms') <= 0) {
+				$littlePoolTime.html(timeDiffFormate(0, undefined));
+				return
+			}
+			
 			$littlePoolTime.html(timeDiffFormate(micro_second.as('ms'), undefined));
 			var interval = setInterval(function() {
 				if (micro_second.as('ms') <= 0) {
+					$littlePoolTime.html(timeDiffFormate(0, undefined));
 					clearInterval(interval);
 					return
 				}
@@ -593,9 +607,16 @@ window.addEventListener('load', function() {
 		}).then(function(result) {
 			startMoment = moment(result, 'X');
 			micro_second = moment.duration(endMoment - startMoment);
+
+			if (micro_second.as('ms') <= 0) {
+				$bigPoolTime.html(timeDiffFormate(0, undefined));
+				return
+			}
+			
 			$bigPoolTime.html(timeDiffFormate(micro_second.as('ms'), undefined));
 			var interval = setInterval(function() {
 				if (micro_second.as('ms') <= 0) {
+					$bigPoolTime.html(timeDiffFormate(0, undefined));
 					clearInterval(interval);
 					return
 				}
