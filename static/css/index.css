@@ -1,0 +1,260 @@
+@import url("common.css");
+html, body{
+	height: 100%;
+	font-size: 15px;
+}
+.bgGrap{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+.section-banner .bgGrap .bg-img{
+	height: 100%;
+	background-image: url(../img/bg_top.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 100%;
+	background-size: cover;
+}
+.section-banner .bgGrap .bg-img .bg-color{
+	height: 100%;
+	color: rgb(153, 0, 255);
+	background-color: rgb(153, 0, 255);
+	background-image: linear-gradient(140deg, currentcolor, transparent);
+	opacity: 0.4;
+	z-index: 0;
+	bottom: 0px;
+	right: 0px;
+	top: 0px;
+	left: 0px;
+}
+.section-banner{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.section-banner .content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.section-banner .content .img img{
+	width: 130px;
+}
+.section-banner .content .title1{
+	font-size: 5rem;
+	font-weight: bold;
+}
+.section-banner .content .title2{
+	font-size: 4rem;
+	font-weight: bold;
+}
+.section-banner .content .desc{
+	font-size: 2rem;
+	position: relative;
+	margin-top: 20px;
+}
+.section-banner .content .desc:before, .section-banner .content .desc:after{
+	content: ' ';
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 3px;
+	background-color: #fff;
+}
+.section-banner .content .desc:before{
+	top: -3px;
+}
+.section-banner .content .desc:after{
+	bottom: -6px;
+}
+.section-countdown{
+	background-color: rgb(60, 120, 216);
+	padding: 80px 0;
+}
+.section-countdown .content{
+	width: 65%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.section-countdown .content .title{
+	font-size: 2.5rem;
+}
+.section-countdown .content .desc{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.section-countdown .content .downBox{
+	padding: 30px;
+	border-width: 1px;
+	border-style: solid;
+	text-align: center;
+	margin: 15px 10px;
+}
+.section-countdown .content .downBox .label{
+	background-color: transparent;
+	color: inherit;
+}
+.section-countdown .content .downBox .downs{
+	margin-top: 20px;
+}
+.section-countdown .content .downBox .downs .down,.section-countdown .content .downBox .downs .value{
+	font-size: 2rem;
+	position: relative;
+}
+
+.section-countdown .content .downBox.downBox-1{
+	color: #ff99ff;
+	border-color: #ff99ff;
+}
+.section-countdown .content .downBox.downBox-1 .down{
+	border-bottom: 1px solid #ff99ff;
+}
+.section-countdown .content .downBoxs .downBox.downBox-2{
+	color: #ffff99;
+	border-color: #ffff99;
+}
+.section-countdown .content .downBox.downBox-2 .down{
+	border-bottom: 1px solid #ffff99;
+}
+
+.section-etn{
+	padding: 80px 0;
+	position: relative;
+	
+}
+.section-etn .bgGrap .bg-img{
+	height: 100%;
+	background-image: url(../img/bg_bottom.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 100%;
+	background-size: cover;
+}
+.section-etn .bgGrap .bg-img .bg-color{
+	height: 100%;
+	color: rgb(255, 0, 255);
+	background-color: rgb(26, 87, 166);
+	background-image: linear-gradient(140deg, currentcolor, transparent);
+	opacity: 0.6;
+	z-index: 0;
+	bottom: 0px;
+	right: 0px;
+	top: 0px;
+	left: 0px;
+}
+.section-etn .divider{
+	border-top-width: 0px;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.section-etn .divider hr{
+	flex: 1;
+	border-top-color: #fff;
+}
+.section-etn .divider .divider-label{
+	padding: 10px 20px;
+	text-align: center;
+}
+.section-etn .divider .divider-label .title{
+	font-size: 2rem;
+}
+.section-etn .join .nav-tabs{
+	background-color: rgb(102, 102, 102);
+}
+.section-etn .join .nav-tabs .nav-item:hover{
+	border-width: 0;
+}
+.section-etn .join .nav-tabs .nav-item a{
+	background-color: transparent;
+	border-width: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 0;
+}
+.section-etn .join .nav-tabs .nav-item a:hover{
+	color: inherit;
+}
+.section-etn .join .nav-tabs .nav-item a.active{
+	color: yellow;
+	background-color: #6515a7;
+	position: relative;
+}
+.section-etn .join .nav-tabs .nav-item a.active:before{
+	content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 2px;
+	background-color: #fff;
+}
+.section-etn .join .nav-tabs .nav-item a:hover{
+	color: yellow;
+	background-color: #6515a7;
+}
+
+.section-etn .join #participate-tab-panner, .section-etn .join #ticket-tab-panner{
+	font-size: 1.2rem;
+}
+.section-etn .join #participate-tab-panner .btn-light{
+	background-color: #fff;
+}
+.section-etn .join #participate-tab-panner .btn-light:hover, .section-etn .join #participate-tab-panner .btn-light:active, .section-etn .join #participate-tab-panner .btn-light.active{
+	background-color: #e2e6ea ;
+	border-color: #dae0e5;
+}
+.section-etn .join #ticket-tab-panner .btn-light:hover{
+	background-color: #dee2e6;
+}
+.section-etn .join #rule-tab-panner .list-group .list-group-item:before {
+	content: "\f005";
+	font-family: FontAwesome;
+	color: #e0a800;
+	margin-right: 10px;
+}
+.section-etn .statistic .cards .card{
+	min-height: 390px;
+	transition: all 0.3s ease;
+}
+.section-etn .statistic .cards .card:hover{
+	cursor: pointer;
+	box-shadow: 0 0 15px #000000;
+}
+.section-etn .statistic .cards .card .card-header{
+	font-size: 1.2rem;
+	margin: 0 1rem;
+}
+.section-etn .statistic .cards .card ul li{
+	display: flex;
+	justify-content: space-between;
+	border-width: 0;
+	padding: 0 0.5rem .75rem;
+}
+	
+@media (max-width: 767px) {
+	.section-banner .content .title1{
+		font-size: 3rem;
+	}
+	.section-banner .content .title2{
+		font-size: 2.5rem;
+	}
+	.section-countdown .content{
+		width: 100%;
+	}
+	
+	.section-etn .statistic .cards .card{
+		width: auto;
+	}
+}
