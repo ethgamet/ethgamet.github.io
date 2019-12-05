@@ -218,6 +218,9 @@ html, body{
 .section-etn .join #ticket-tab-panner .btn-light:hover{
 	background-color: #dee2e6;
 }
+.section-etn .join #rule-tab-panner .list-group{
+	font-size: 0.9rem;
+}
 .section-etn .join #rule-tab-panner .list-group .list-group-item:before {
 	content: "\f005";
 	font-family: FontAwesome;
