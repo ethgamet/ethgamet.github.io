@@ -241,7 +241,7 @@ window.addEventListener('load', function() {
 				abkContract.methods.showPersonIsOut().call({from: userAccount}).then(function(result) {
 					// 未出局,无购买资格
 					if (!result) {
-						alert("You are not out yet");
+						alert("您尚未出局!");
 						throw new Error("User not out yet");
 					}
 					resolve();
@@ -276,10 +276,10 @@ window.addEventListener('load', function() {
 		}, function(err) {
 			if (err) {
 				console.log(err);
-				alert("Purchase failure!");
+				alert("發送失敗!");
 				return
 			}
-			alert("Sending succeeded!", "success", 2, function() {
+			alert("發送成功!", "success", 2, function() {
 				if (recommander) {
 					location.href = location.href.split("?")[0];
 				} else {
@@ -298,10 +298,10 @@ window.addEventListener('load', function() {
 		}, function(err) {
 			if (err) {
 				console.log(err);
-				alert("Purchase failure!");
+				alert("發送失敗!");
 				return
 			}
-			alert("Sending succeeded!", "success", 2, function() {
+			alert("發送成功!", "success", 2, function() {
 				location.href = location.href.split("?")[0];
 			});
 		})
@@ -316,10 +316,10 @@ window.addEventListener('load', function() {
 		}, function(err) {
 			if (err) {
 				console.log(err);
-				alert("Purchase failure!");
+				alert("發送失敗!");
 				return
 			}
-			alert("Sending succeeded!", "success", 2, function() {
+			alert("發送成功!", "success", 2, function() {
 				location.href = location.href.split("?")[0];
 			});
 		})
@@ -333,10 +333,10 @@ window.addEventListener('load', function() {
 		}, function(err) {
 			if (err) {
 				console.log(err);
-				alert("Extraction failure!");
+				alert("提現收益失敗!");
 				return
 			}
-			alert("Successful extraction!", "success", 2, function() {
+			alert("提現收益成功!", "success", 2, function() {
 				location.reload();
 			});
 		})
@@ -673,10 +673,10 @@ window.addEventListener('load', function() {
 		        if (tag) {
 					// 复制完成后清除选中区域
 			        window.getSelection().removeAllRanges();
-					alert("Copy succeeded!", "success")
+					alert("複製成功!", "success")
 				}
 			}catch(e){
-				alert("This browser does not support copy function!");
+				alert("該瀏覽器不支持複製!");
 			}
 	        
 		})
@@ -708,8 +708,8 @@ window.addEventListener('load', function() {
 					// 用户确认再次购买
 					alertify.dialog('confirm').set({
 						transition: "zoom",
-						title: "warning",
-						message: "Confirm that your income has been withdrawn, otherwise all your income will be cleared after purchasing again?",
+						title: "警告",
+						message: "确认您的收益已提取完毕,否则再次购买后将清空您的所有收益?",
 						onok: function(){
 							reenter(web3.utils.toWei(value, 'ether'));
 						},
@@ -735,13 +735,13 @@ window.addEventListener('load', function() {
 			var value = $("#undrawnCoins").html();
 			var valueBig = new BigNumber(value);
 			if (valueBig.comparedTo(0) !== 1) {
-				alert("No income available");
+				alert("沒有收益可以體現");
 				return
 			}
 			alertify.dialog('confirm').set({
 				transition: "zoom",
-				title: "withdraw income",
-				message: "Recognize and withdraw "+ value +"eth income?",
+				title: "體現收益",
+				message: "確認體現  "+ value +" ETH  收益?",
 				onok: function(){
 					personWithdraw(web3.utils.toWei(value, 'ether'));
 				}
