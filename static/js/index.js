@@ -1,20 +1,20 @@
 var abkAddress = "0x1d06d8b20dbbd8851484793130e8d473d41e186a",
 	abkAbi = [{"payable":true,"stateMutability":"payable","type":"fallback"},{"constant":true,"inputs":[{"internalType":"uint256","name":"eth","type":"uint256"}],"name":"admission_check","outputs":[{"internalType":"bool","name":"result","type":"bool"},{"internalType":"string","name":"reason","type":"string"}],"payable":false,"stateMutability":"pure","type":"function"},{"constant":false,"inputs":[],"name":"bigPoolTriggerByOver","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"can_reg_check","outputs":[{"internalType":"bool","name":"result","type":"bool"},{"internalType":"string","name":"reason","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"executeDividentPeriod","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"gameOver","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"internalType":"uint256","name":"cash","type":"uint256"}],"name":"personWithdraw","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"internalType":"uint256","name":"cash","type":"uint256"}],"name":"platformWithdraw","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[],"name":"reenter","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"internalType":"address","name":"referrer","type":"address"}],"name":"refer_valid_check","outputs":[{"internalType":"bool","name":"result","type":"bool"},{"internalType":"string","name":"reason","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"referrer","type":"address"}],"name":"reg","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[],"name":"reg","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"showAmbassadorBonus","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showBigPool","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showBigRound","outputs":[{"internalType":"uint16","name":"","type":"uint16"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showDividentNextTime","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showLittePool","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showLittleRound","outputs":[{"internalType":"uint16","name":"","type":"uint16"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showNowTime","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showOutDifference","outputs":[{"internalType":"uint8","name":"rate","type":"uint8"},{"internalType":"uint256","name":"difference","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showPersonBonums","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"internalType":"uint256","name":"time","type":"uint256"}],"name":"showPersonDailyNum","outputs":[{"internalType":"uint16","name":"","type":"uint16"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showPersonDividentEarn","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showPersonExist","outputs":[{"internalType":"bool","name":"exist","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showPersonId","outputs":[{"internalType":"uint16","name":"id","type":"uint16"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showPersonIsOut","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showPersonNum","outputs":[{"internalType":"uint16","name":"","type":"uint16"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showPersonPay","outputs":[{"internalType":"uint16","name":"id","type":"uint16"},{"internalType":"uint256","name":"pay","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showPersonPoolEarn","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showPersonReferrerBonus","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showPersonUnwithdraw","outputs":[{"internalType":"uint256","name":"unwithdraw","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showPlatformBonus","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showPoolTime","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showPredictEarn","outputs":[{"internalType":"uint256","name":"min","type":"uint256"},{"internalType":"uint256","name":"max","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showReferrerBonus","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showRelation","outputs":[{"internalType":"address","name":"referrer","type":"address"},{"internalType":"uint256","name":"num","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showTotalPay","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"showTotalWiethdraw","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"}],
-	// 1: 主網  3: Ropsten测试网络  42: Kovan测试网络  4: Rinkeby测试网络
+	// 1: 主網  3: Ropsten測試網絡  42: Kovan測試網絡  4: Rinkeby測試網絡
 	gnetId = 3;
 
 var userAccount = "",
 	isStart = false,
-	// 如果是循环检查，则不用反复提示错误提示
+	// 如果是循環檢查,則不用反復提示錯誤提示
 	isCheckInterval = false,
-	// 网络检查
+	// 網絡檢查
 	netCheck = false,
-	// 用户是否存在
+	// 用戶是否存在
 	userExist = false,
-	// 推荐是否有效
+	// 推薦是否有效
 	recommendedEffective = {
 		effective: true,
-		// 推荐无效原因
+		// 推薦無效原因
 		reason: ""
 	},
 	web3 = window.web3,
@@ -23,7 +23,7 @@ var userAccount = "",
 
 window.addEventListener('load', function() {
 	/**
-	 * 检查是浏览器是否安装web3
+	 * 檢查瀏覽器時候安裝web3
 	 */
 	var checkNet = function() {
 		if (isStart) {
@@ -46,7 +46,7 @@ window.addEventListener('load', function() {
 	};
 
 	/**
-	 * 连接web3
+	 * 鏈接web3
 	 * @param {Object} web3
 	 */
 	var handlerWeb3 = function(web3) {
@@ -73,7 +73,7 @@ window.addEventListener('load', function() {
 
 	};
 	/**
-	 * 检查是否登录并获取用户账号
+	 * 檢查是否登錄並獲取用戶賬號
 	 */
 	var checkLogin = function() {
 		var accountInterval = setInterval(function() {
@@ -101,16 +101,16 @@ window.addEventListener('load', function() {
 				if (!isCheckInterval) {
 					errLogin();
 				}
-				throw new Error("用户未登录");
+				throw new Error("用戶未登錄");
 			}
 			userAccount = accounts[0];
 			if (!userAccount || userAccount == "") {
-				throw new Error("用户未登录");
+				throw new Error("用戶未登錄");
 			}
 			
 			return checkBought();
 		}).then(function(exist) {
-			// 如果买入过，查询我的收益
+			// 如果買入過,查詢我的收益
 			if (exist) {
 				userExist = true;
 			}
@@ -126,7 +126,7 @@ window.addEventListener('load', function() {
 		if (userExist) {
 			updateIntiveLink();
 			getRelation();
-			// 我的收益数据查询
+			// 我的收益數據查詢
 			showSettlementRevenueCall();
 			showRecommendedRewardCall();
 			showPrizePoolIncomeCall();
@@ -137,7 +137,7 @@ window.addEventListener('load', function() {
 			showUndrawnCoinsCall();
 		}
 		checkRecommander();
-		// 统计数据查询
+		// 統計數據查詢
 		showBigPoolRoundCall();
 		showLittePoolRoundCall();
 		showLittePoolIncomeCall();
@@ -152,7 +152,7 @@ window.addEventListener('load', function() {
 	}
 
 	/**
-	 * 生成推荐链接
+	 * 生成推薦鏈接
 	 */
 	var updateIntiveLink = function() {
 		var url = location.href;
@@ -164,7 +164,7 @@ window.addEventListener('load', function() {
 		}
 	};
 
-	// 获取推荐人
+	// 獲取推薦人
 	var getRecomander = function() {
 		var reg = new RegExp("(^|&)r=([^&]*)(&|$)");
 		var r = window.location.search.substr(1).match(reg);
@@ -176,9 +176,9 @@ window.addEventListener('load', function() {
 	
 	var recommander = getRecomander();
 
-	// 校验推荐人
+	// 校驗推薦人
 	var checkRecommander = function() {
-		// 未携带推荐人,可以进行无推荐购买
+		// 未携帶推薦人,可以進行無推薦購買
 		if (!recommander) {
 			return
 		}
@@ -186,7 +186,7 @@ window.addEventListener('load', function() {
 		var $willRecommander = $('.will-reg-recommander'),
 			showStr = recommander.length > 15 ? recommander.substring(0, 10) + "..." + recommander.substr(-5) : recommander;
 		
-		// 如果用户已经购买过,则推荐链接无效,可以进行无推荐购买
+		// 如果用戶已經購買過,則推薦鏈接無效,可以進行無推薦購買
 		if (userExist) {
 			$('.will-reg-recommander-con').removeClass('hidden');
 			$willRecommander.html("<span class='text-danger'> Already recommended user!  </span>");
@@ -219,7 +219,7 @@ window.addEventListener('load', function() {
 		}
 	};
 	
-	// 查询用户是否买入过
+	// 查詢用戶是否買入過
 	var checkBought = function() {
 		return new Promise(function(resolve, reject) {
 			abkContract.methods.showPersonExist().call({from: userAccount}, function(err, result) {
@@ -232,14 +232,14 @@ window.addEventListener('load', function() {
 		})
 	}
 	
-	// 检查时候拥有购买资格
+	// 檢查是否擁有購買資格
 	var checkBuy = function() {
 		return new Promise(function(resolve, reject) {
-			// 如果用户已经注册过,判断是否出出局
+			// 如果用戶已經注冊過,判斷是否出局
 			// 已出局才能再次入局
 			if (userExist) {
 				abkContract.methods.showPersonIsOut().call({from: userAccount}).then(function(result) {
-					// 未出局,无购买资格
+					// 未出具,無購買資格
 					if (!result) {
 						alert("您尚未出局!");
 						throw new Error("User not out yet");
@@ -250,10 +250,10 @@ window.addEventListener('load', function() {
 					reject();
 				})
 			} else {
-				// 检查是否拥有购买资格
+				// 檢查是否擁有購買資格
 				abkContract.methods.can_reg_check().call({from: userAccount}).then(function(result) {
 					console.log(result);
-					// 无购买资格
+					// 無購買資格
 					if (!result.result) {
 						alert(result.reason);
 						throw new Error(result.reason);
@@ -267,7 +267,7 @@ window.addEventListener('load', function() {
 		});
 	}
 	
-	// 用户首次购买-不携带推荐
+	// 用戶首次購買-不携帶推薦
 	var buy = function(etherValue) {
 		abkContract.methods.reg().send({
 			from: userAccount,
@@ -289,7 +289,7 @@ window.addEventListener('load', function() {
 		})
 	};
 	
-	// 用户首次购买-携带推荐
+	// 用戶首次購買-携帶推薦
 	var recommanderBuy = function(etherValue) {
 		abkContract.methods.reg(recommander).send({
 			from: userAccount,
@@ -325,7 +325,7 @@ window.addEventListener('load', function() {
 		})
 	}
 	
-	// 用户提币
+	// 用户提幣
 	var personWithdraw = function(etherValue) {
 		abkContract.methods.personWithdraw(etherValue).send({
 			from: userAccount,
@@ -342,7 +342,7 @@ window.addEventListener('load', function() {
 		})
 	}
 	
-	// 个人收益 查询已结算分红收益
+	// 個人收益 查詢已結算分紅收益
 	var showSettlementRevenueCall = function() {
 		abkContract.methods.showPersonDividentEarn().call({from: userAccount}, function(err, result) {
 			if (err) {
@@ -353,7 +353,7 @@ window.addEventListener('load', function() {
 			$("#settlementRevenue").html(BN(resultWei).toFixed(6, 1));
 		});
 	};
-	// 个人收益 查询推荐奖励
+	// 個人收益 查詢推薦獎勵
 	var showRecommendedRewardCall = function(err, result) {
 		abkContract.methods.showPersonReferrerBonus().call({from: userAccount}, function(err, result) {
 			if (err) {
@@ -364,7 +364,7 @@ window.addEventListener('load', function() {
 			$("#recommendedReward").html(BN(resultWei).toFixed(6, 1));
 		});
 	};
-	// 个人收益 查询奖池收益
+	// 個人收益 查詢獎池收益
 	var showPrizePoolIncomeCall = function(err, result) {
 		abkContract.methods.showPersonPoolEarn().call({from: userAccount}, function(err, result) {
 			if (err) {
@@ -375,7 +375,7 @@ window.addEventListener('load', function() {
 			$("#prizePoolIncomeCall").html(BN(resultWei).toFixed(6, 1));
 		});
 	};
-	// 个人收益 查询下次分红收益时间差
+	// 個人收益 查詢下次分紅收益時間差
 	var showNextTimeDifferenceInEarningsCall = function(err, result) {
 		var micro_second, startMoment, endMoment,
 			$nextTimeDifferenceInEarnings = $("#nextTimeDifferenceInEarnings");
@@ -406,7 +406,7 @@ window.addEventListener('load', function() {
 			console.log(e);
 		});
 	};
-	// 个人收益 查询几倍动静出局还差
+	// 個人收益,查詢幾倍動靜出局還差
 	var showStillOutOfTheGameCall = function(err, result) {
 		abkContract.methods.showOutDifference().call({from: userAccount}, function(err, result) {
 			if (err) {
@@ -418,7 +418,7 @@ window.addEventListener('load', function() {
 			$("#stillOutOfTheGame").html(BN(resultWei).toFixed(6, 1));
 		});
 	};
-	// 个人收益 查询未结算预计收益
+	// 個人收益 查詢未結算預計收益
 	var showUnsettledProjectedEarningsCall = function(err, result) {
 		abkContract.methods.showPredictEarn().call({from: userAccount}, function(err, result) {
 			if (err) {
@@ -430,7 +430,7 @@ window.addEventListener('load', function() {
 			$("#unsettledProjectedEarnings").html(BN(minWei).toFixed(6, 1) + "-" + BN(maxWei).toFixed(6, 1));
 		});
 	};
-	// 个人收益 查询我得业绩收益
+	// 個人收益 查詢我的業績收益
 	var showMyPerformanceGainsCall = function(err, result) {
 		abkContract.methods.showPersonBonums().call({from: userAccount}, function(err, result) {
 			if (err) {
@@ -441,7 +441,7 @@ window.addEventListener('load', function() {
 			$("#myPerformanceGains").html(BN(resultWei).toFixed(6, 1));
 		});
 	};
-	// 个人收益 查询未提币数量
+	// 個人收益 查詢未提幣數量
 	var showUndrawnCoinsCall = function(err, result) {
 		abkContract.methods.showPersonUnwithdraw().call({from: userAccount}, function(err, result) {
 			if (err) {
@@ -466,7 +466,7 @@ window.addEventListener('load', function() {
 		});
 	}
 
-	// 数据统计 已进入的总资金
+	// 數據統計 已進入的總資金
 	var showTotalInvestedCall = function() {
 		abkContract.methods.showTotalPay().call({from: userAccount}, function(err, result) {
 			if (err) {
@@ -477,7 +477,7 @@ window.addEventListener('load', function() {
 			$("#totalInvested").html(BN(resultWei).toFixed(6, 1));
 		});
 	}
-	// 数据统计 总已结算分红收益
+	// 數據統計 縂已結算分紅收益
 	var showTotalSettledCall = function() {
 		abkContract.methods.showTotalWiethdraw().call({from: userAccount}, function(err, result) {
 			if (err) {
@@ -488,7 +488,7 @@ window.addEventListener('load', function() {
 			$("#totalSettled").html(BN(resultWei).toFixed(6, 1));
 		});
 	}
-	// 数据统计 总的推荐收益
+	// 數據統計 總的推薦收益
 	var showTotalRecommendedCall = function() {
 		abkContract.methods.showReferrerBonus().call({from: userAccount}, function(err, result) {
 			if (err) {
@@ -499,7 +499,7 @@ window.addEventListener('load', function() {
 			$("#totalRecommended").html(BN(resultWei).toFixed(6, 1));
 		});
 	}
-	// 数据统计 团队
+	// 數據統計 團隊
 	var showTeamCall = function() {
 		abkContract.methods.showPlatformBonus().call({from: userAccount}, function(err, result) {
 			if (err) {
@@ -510,7 +510,7 @@ window.addEventListener('load', function() {
 			$("#team").html(BN(resultWei).toFixed(6, 1));
 		});
 	}
-	// 数据统计 大使
+	// 數據統計 大使
 	var showAmbassadorCall = function() {
 		abkContract.methods.showAmbassadorBonus().call({from: userAccount}, function(err, result) {
 			if (err) {
@@ -522,7 +522,7 @@ window.addEventListener('load', function() {
 		});
 	}
 	
-	// 数据统计 小奖池收益
+	// 數據統計 小獎池收益
 	var showLittePoolIncomeCall = function() {
 		abkContract.methods.showLittePool().call({from: userAccount}, function(err, result) {
 			if (err) {
@@ -533,7 +533,7 @@ window.addEventListener('load', function() {
 			$("#small-pot-eth, #smallPot").html(BN(resultWei).toFixed(6, 1));
 		});
 	}
-	// 数据统计 大奖池收益
+	// 數據統計 大獎池收益
 	var showBigPoolIncomeCall = function() {
 		abkContract.methods.showBigPool().call({from: userAccount}, function(err, result) {
 			if (err) {
@@ -545,7 +545,7 @@ window.addEventListener('load', function() {
 		});
 	}
 	
-	// 数据统计 小奖池回合
+	// 數據統計 小獎池回合
 	var showLittePoolRoundCall = function() {
 		abkContract.methods.showLittleRound().call({from: userAccount}, function(err, result) {
 			if (err) {
@@ -554,7 +554,7 @@ window.addEventListener('load', function() {
 			$("#small-pot-round").html(result);
 		});
 	}
-	// 数据统计 大奖池回合
+	// 數據統計 大獎池回合
 	var showBigPoolRoundCall = function() {
 		abkContract.methods.showBigRound().call({from: userAccount}, function(err, result) {
 			if (err) {
@@ -565,7 +565,7 @@ window.addEventListener('load', function() {
 		});
 	}
 	
-	// 数据统计 小奖池下次收益时间 倒计时
+	// 數據統計 小堅持下次收益時間 倒計時
 	var showLittePoolNextTime = function() {
 		var micro_second, startMoment, endMoment,
 			$littlePoolTime = $(".downBox.little-pool .time");
@@ -596,7 +596,7 @@ window.addEventListener('load', function() {
 			console.log(e);
 		});
 	}
-	// 数据统计 大奖池下次收益时间 倒计时
+	// 數據統計 大堅持下次收益時間 倒計時
 	var showBigPoolNextTime = function() {
 		var micro_second, startMoment, endMoment,
 			$bigPoolTime = $(".downBox.big-pool .time");
@@ -628,7 +628,7 @@ window.addEventListener('load', function() {
 		});;
 	}
 	
-	// 按钮操作开始前的检查
+	// 按鈕操作開始前的檢查
 	var checkAll = function() {
 		if (!web3) {
 			errWeb3();
@@ -671,7 +671,7 @@ window.addEventListener('load', function() {
 		        var tag = document.execCommand('copy');
 		        
 		        if (tag) {
-					// 复制完成后清除选中区域
+					// 複製完成后清除選中區域
 			        window.getSelection().removeAllRanges();
 					alert("複製成功!", "success")
 				}
@@ -686,7 +686,7 @@ window.addEventListener('load', function() {
 				return
 			}
 			
-			// 校验推荐链接
+			// 檢驗推薦鏈接
 			// if (recommander && !recommendedEffective.effective) {
 			// 	alert(recommendedEffective.reason);
 			// 	return
@@ -697,19 +697,19 @@ window.addEventListener('load', function() {
 			var value = $sendEthInput.val();
 			
 			if (!reg.test(value)) {
-				alert('门票单位 1 eth');
+				alert('門票單位 1 eth');
 				return
 			}
 			
-			// 校验用户是否符合购买资格
+			// 檢驗用戶是否擁有購買資格
 			checkBuy().then(function() {
-				// 用户已存在,再次入局
+				// 用戶已存在,再次入局
 				if (userExist) {
 					// 用户确认再次购买
 					alertify.dialog('confirm').set({
 						transition: "zoom",
 						title: "警告",
-						message: "确认您的收益已提取完毕,否则再次购买后将清空您的所有收益?",
+						message: "確認您的收益已提取完畢,否則再次購買后將清空您的所有收益?",
 						onok: function(){
 							reenter(web3.utils.toWei(value, 'ether'));
 						},
@@ -717,9 +717,9 @@ window.addEventListener('load', function() {
 							console.log("User cancel incoming");
 						}
 					}).show();
-				} else if (recommander && recommendedEffective.effective) {  // 首次购买,携带了推荐链接,并且推荐链接有效
+				} else if (recommander && recommendedEffective.effective) {  // 首次購買,携帶了推薦鏈接,并且推薦鏈接有效
 					recommanderBuy(web3.utils.toWei(value, 'ether'))
-				} else {  // 首次购买
+				} else {  // 首次購買
 					buy(web3.utils.toWei(value, 'ether'))
 				}
 			}).catch(function(e) {
@@ -735,13 +735,13 @@ window.addEventListener('load', function() {
 			var value = $("#undrawnCoins").html();
 			var valueBig = new BigNumber(value);
 			if (valueBig.comparedTo(0) !== 1) {
-				alert("沒有收益可以體現");
+				alert("沒有收益可以提現");
 				return
 			}
 			alertify.dialog('confirm').set({
 				transition: "zoom",
-				title: "體現收益",
-				message: "確認體現  "+ value +" ETH  收益?",
+				title: "提現收益",
+				message: "確認提現  "+ value +" ETH  收益?",
 				onok: function(){
 					personWithdraw(web3.utils.toWei(value, 'ether'));
 				}
