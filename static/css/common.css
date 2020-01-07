@@ -73,3 +73,28 @@ table{
 	text-shadow: initial !important;;
 	border-width: 0px !important;
 }
+
+.mongolia{
+	position: relative;
+}
+.mongolia .container .content{
+	color: #ffffff87 !important;
+}
+.mongolia .container .content .desc::after, .mongolia .container .content .desc::before{
+	background-color: #ffffff87;
+}
+.mongolia .restart-tip{
+	position: relative;
+	z-index: 5;
+	font-size: 1.5rem;
+	display: block !important;
+}
+.mongolia:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #dae0e57a;	
+}
