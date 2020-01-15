@@ -190,7 +190,7 @@ window.addEventListener('load', function() {
 		// 如果用戶已經購買過,則推薦鏈接無效,可以進行無推薦購買
 		if (userExist) {
 			$('.will-reg-recommander-con').removeClass('hidden');
-			$willRecommander.html("<span class='text-danger'> Already recommended user!  </span>");
+			$willRecommander.html("<span class='text-danger'> 已經推薦客戶!  </span>");
 			return
 		}
 		
@@ -200,7 +200,7 @@ window.addEventListener('load', function() {
 			try{
 				abkContract.methods.refer_valid_check(recommander).call({from: userAccount}, function(error, result) {
 					if (error) {
-						$willRecommander.html("<span class='text-danger'> ERROR!  </span>");
+						$willRecommander.html("<span class='text-danger'> 錯誤!  </span>");
 						return
 					}
 					if (!result.result) {
@@ -215,7 +215,7 @@ window.addEventListener('load', function() {
 				})
 			}catch(e){
 				$willRecommander.html("<span class='text-danger'>" + showStr +
-					"<span style='font-size:12px;'>&nbsp;(Wrong recommended address!)</span>" + "</span>");
+					"<span style='font-size:12px;'>&nbsp;(推薦地址錯誤!)</span>" + "</span>");
 			}
 		}
 	};
